@@ -23,7 +23,7 @@ export default async function PricingPage() {
       <div className="grid md:grid-cols-2 gap-8 max-w-xl mx-auto">
         <PricingCard
           name={basePlan?.name || 'Base'}
-          price={basePrice?.unitAmount || 800}
+          price={basePrice?.unitAmount || 2000}
           interval={basePrice?.interval || 'month'}
           trialDays={basePrice?.trialPeriodDays || 7}
           features={[
@@ -35,7 +35,7 @@ export default async function PricingPage() {
         />
         <PricingCard
           name={plusPlan?.name || 'Plus'}
-          price={plusPrice?.unitAmount || 1200}
+          price={plusPrice?.unitAmount || 5000}
           interval={plusPrice?.interval || 'month'}
           trialDays={plusPrice?.trialPeriodDays || 7}
           features={[
@@ -72,7 +72,7 @@ function PricingCard({
         with {trialDays} day free trial
       </p>
       <p className="text-4xl font-medium text-gray-900 mb-6">
-        ${price / 100}{' '}
+        ${price / 1000}{' '}
         <span className="text-xl font-normal text-gray-600">
           per user / {interval}
         </span>
