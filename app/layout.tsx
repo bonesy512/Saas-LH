@@ -8,8 +8,8 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata: Metadata = {
-  title: 'Next.js SaaS Starter',
-  description: 'Get started quickly with Next.js, Postgres, and Stripe.',
+  title: 'Landhacker',
+  description: 'AI-Powered Land Investment Automation',
 };
 
 export const viewport: Viewport = {
