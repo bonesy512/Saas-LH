@@ -1,6 +1,6 @@
 # Next.js SaaS Starter
 
-This is a starter template for building a Landhacker application using **Next.js** with support for authentication, Stripe integration for payments, and a dashboard for logged-in users.
+This is a starter template for building a Landhacker application using **Next.js** with support for auth0, Stripe integration for payments, and a dashboard for logged-in users.
 
 **Demo: [https://next-saas-start.vercel.app/](https://next-saas-start.vercel.app/)**
 
