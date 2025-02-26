@@ -1,12 +1,15 @@
+
 import './globals.css';
 import type { Metadata, Viewport } from 'next';
 import { Manrope } from 'next/font/google';
 import { UserProvider } from '@/lib/auth';
 import { getUser } from '@/lib/db/queries';
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata: Metadata = {
-  title: 'Next.js SaaS Starter',
-  description: 'Get started quickly with Next.js, Postgres, and Stripe.',
+  title: 'Landhacker.AI',
+  description: 'Automate Land Investing with AI Precision',
 };
 
 export const viewport: Viewport = {
@@ -29,7 +32,9 @@ export default function RootLayout({
     >
       <body className="min-h-[100dvh] bg-gray-50">
         <UserProvider userPromise={userPromise}>{children}</UserProvider>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
-}
+.}
